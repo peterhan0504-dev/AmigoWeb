@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-key="page_title">Amigo Global</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>body{opacity:0;transition:opacity .15s}body.ready{opacity:1}</style>
+</head>
+<body data-page="index">
+  <div data-include="nav"></div>
+
+  <section class="hero">
+    <div>
+      <div class="hero-eyebrow" data-key="hero.eyebrow"></div>
+      <h1 data-key="hero.title" data-html></h1>
+      <p data-key="hero.desc"></p>
+      <div class="btn-row">
+        <button class="btn btn-primary" data-key="hero.btn1"></button>
+        <button class="btn btn-ghost" data-key="hero.btn2"></button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="../assets/images/hero.jpg" alt="" onerror="this.style.display='none'" />
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats-inner" data-list="stats">
+      <template>
+        <div>
+          <div class="stat-num" data-field="num"></div>
+          <div class="stat-label" data-field="label"></div>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <section class="section" id="business">
+    <div class="section-eyebrow" data-key="business.eyebrow"></div>
+    <h2 data-key="business.title"></h2>
+    <p class="lead" data-key="business.lead"></p>
+    <div class="biz-grid" data-list="business.cards">
+      <template>
+        <div class="biz-card">
+          <div class="biz-icon" data-field="icon"></div>
+          <h3 data-field="title"></h3>
+          <p data-field="desc"></p>
+          <div class="biz-link" data-field="link"></div>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <section class="section bleed" id="news">
+    <div class="inner">
+      <div class="section-eyebrow" data-key="news.eyebrow"></div>
+      <h2 data-key="news.title"></h2>
+      <p class="lead" data-key="news.lead"></p>
+      <div class="news-grid" data-list="news.cards">
+        <template>
+          <div class="news-card">
+            <div class="news-img"><img data-field-src="image" data-src-prefix="../assets/images/" alt="" onerror="this.style.display='none'" /></div>
+            <div class="news-meta"><span data-field="category"></span> · <span data-field="date"></span></div>
+            <h4 data-field="title"></h4>
+            <p data-field="summary"></p>
+          </div>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-inner">
+      <h2 data-key="cta.title" data-html></h2>
+      <a href="contact.html" class="btn btn-primary" data-key="cta.btn"></a>
+    </div>
+  </section>
+
+  <div data-include="footer"></div>
+  <script src="../js/include.js"></script>
+</body>
+</html>

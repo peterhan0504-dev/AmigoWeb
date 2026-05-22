@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-key="page_title">关于我们 — Amigo Global</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>body{opacity:0;transition:opacity .15s}body.ready{opacity:1}</style>
+</head>
+<body data-page="about">
+  <div data-include="nav"></div>
+
+  <!-- Page hero -->
+  <section class="page-hero">
+    <div class="breadcrumb"><span data-key="page_hero.breadcrumb_root"></span> <span>›</span> <span data-key="page_hero.breadcrumb_current"></span></div>
+    <h1 data-key="page_hero.title" data-html></h1>
+    <p data-key="page_hero.desc"></p>
+  </section>
+
+  <!-- 使命 -->
+  <section class="mission">
+    <div class="mission-inner">
+      <div>
+        <div class="label" data-key="mission.label"></div>
+        <h2 data-key="mission.title" data-html></h2>
+      </div>
+      <div class="copy" data-list="mission.paragraphs">
+        <template><p data-field-self></p></template>
+      </div>
+    </div>
+  </section>
+
+  <!-- 发展历程 -->
+  <section class="section">
+    <div class="section-eyebrow" data-key="journey.eyebrow"></div>
+    <h2 data-key="journey.title"></h2>
+    <div class="timeline" data-list="journey.milestones">
+      <template>
+        <div class="ti">
+          <div class="ti-year" data-field="year"></div>
+          <div>
+            <h4 data-field="title"></h4>
+            <p data-field="desc"></p>
+          </div>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <!-- 团队 -->
+  <section class="section bleed">
+    <div class="inner">
+      <div class="section-eyebrow" data-key="team.eyebrow"></div>
+      <h2 data-key="team.title"></h2>
+      <div class="team-grid" data-list="team.members">
+        <template>
+          <div class="team-card">
+            <div class="team-photo" data-field="avatar"></div>
+            <div class="team-body">
+              <h4 data-field="name"></h4>
+              <div class="role" data-field="role"></div>
+              <p data-field="bio"></p>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <!-- 价值观 -->
+  <section class="values">
+    <div class="values-inner">
+      <div class="section-eyebrow" data-key="values.eyebrow"></div>
+      <h2 data-key="values.title" data-html></h2>
+      <div class="values-grid" data-list="values.items">
+        <template>
+          <div class="value-item">
+            <div class="value-num" data-field="num"></div>
+            <h4 data-field="title_en"></h4>
+            <p data-field="desc"></p>
+          </div>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <div data-include="footer"></div>
+  <script src="../js/include.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "page_title": "联系我们",
+  "page_hero": {
+    "breadcrumb_root": "首页",
+    "breadcrumb_current": "联系我们",
+    "title": "无论你想**合作**、**采访**\n还是**加入我们**，请直接告诉我们。",
+    "desc": "我们有专门的团队对接不同类型的合作。请选择最匹配的渠道，能让你的请求最快被处理。"
+  },
+  "channels": [
+    {
+      "icon": "B",
+      "title": "商务合作",
+      "desc": "品牌入驻、采购合作、物流服务、支付集成等业务咨询。",
+      "email_key": "business"
+    },
+    {
+      "icon": "I",
+      "title": "投资者关系",
+      "desc": "财务披露、机构调研、股东问询请联系 IR 团队。",
+      "email_key": "investor"
+    }
+  ],
+  "form": {
+    "label": "GENERAL INQUIRY",
+    "title": "说点什么",
+    "lead": "如果不清楚联系哪个团队，可以直接通过这里发送，我们会在 1-2 个工作日内转给对应负责人。",
+    "bullets": [
+      "0 上架费，5% 行业最低平台佣金",
+      "一次上架，同时触达 B 端采购商与 C 端消费者",
+      "Stripe 全球分账，46 国合规收款、1-3 天到账"
+    ],
+    "field_name": "姓名",
+    "field_name_placeholder": "您的姓名",
+    "field_company": "公司",
+    "field_company_placeholder": "所在公司或机构",
+    "field_email": "邮箱",
+    "field_type": "请求类型",
+    "field_type_options": [
+      "卖家入驻咨询",
+      "商务合作 / 批量采购",
+      "媒体与采访",
+      "其他咨询"
+    ],
+    "field_message": "详细说明",
+    "field_message_placeholder": "简要描述您的需求或问题...",
+    "submit": "发送留言"
+  },
+  "offices": {
+    "eyebrow": "GLOBAL OFFICES",
+    "title": "我们在全球的办公地点",
+    "items": [
+      {
+        "city": "Los Angeles",
+        "country": "USA · WEST",
+        "addr": "801 E 7th St\nUnit 113, 114, 115\nLos Angeles, CA 90021",
+        "tel": "+1 626-689-0198"
+      }
+    ]
+  }
+}

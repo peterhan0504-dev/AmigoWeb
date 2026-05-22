@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-key="page_title">联系我们 — Amigo Global</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>body{opacity:0;transition:opacity .15s}body.ready{opacity:1}</style>
+</head>
+<body data-page="contact">
+  <div data-include="nav"></div>
+
+  <section class="page-hero">
+    <div class="breadcrumb"><span data-key="page_hero.breadcrumb_root"></span> <span>›</span> <span data-key="page_hero.breadcrumb_current"></span></div>
+    <h1 data-key="page_hero.title" data-html></h1>
+    <p data-key="page_hero.desc"></p>
+  </section>
+
+  <!-- 联系渠道 -->
+  <section class="channels">
+    <div class="channels-grid" data-list="channels">
+      <template>
+        <div class="channel-card">
+          <div class="channel-icon" data-field="icon"></div>
+          <h3 data-field="title"></h3>
+          <p data-field="desc"></p>
+          <a data-channel-email></a>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <!-- 留言表单 -->
+  <section class="form-section">
+    <div class="form-inner">
+      <div>
+        <div class="label" data-key="form.label"></div>
+        <h2 data-key="form.title" data-html></h2>
+        <p class="lead" data-key="form.lead"></p>
+        <ul data-list="form.bullets">
+          <template><li data-field-self></li></template>
+        </ul>
+      </div>
+      <form data-contact-form>
+        <div class="form-row">
+          <div class="field"><label data-key="form.field_name"></label><input type="text" data-placeholder-key="form.field_name_placeholder" required /></div>
+          <div class="field"><label data-key="form.field_company"></label><input type="text" data-placeholder-key="form.field_company_placeholder" /></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label data-key="form.field_email"></label><input type="email" placeholder="name@company.com" required /></div>
+          <div class="field"><label data-key="form.field_type"></label><select data-options-key="form.field_type_options"></select></div>
+        </div>
+        <div class="field full"><label data-key="form.field_message"></label><textarea data-placeholder-key="form.field_message_placeholder"></textarea></div>
+        <button type="submit" class="submit" data-key="form.submit"></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 办公地点 -->
+  <section class="offices">
+    <div class="section-eyebrow" data-key="offices.eyebrow"></div>
+    <h2 data-key="offices.title"></h2>
+    <div class="office-grid" data-list="offices.items">
+      <template>
+        <div class="office">
+          <div class="city" data-field="city"></div>
+          <div class="country" data-field="country"></div>
+          <div class="addr" data-field="addr" data-html></div>
+          <div class="tel" data-field="tel"></div>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <div data-include="footer"></div>
+  <script src="../js/include.js"></script>
+</body>
+</html>

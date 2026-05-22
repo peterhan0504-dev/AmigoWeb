@@ -1,0 +1,51 @@
+{
+  "company": {
+    "name_short": "AmigoGlobal",
+    "name_full": "Amigo Global",
+    "founded_year": "2024",
+    "headquarters_city": "Los Angeles",
+    "is_listed": false,
+    "stock_exchange": "",
+    "stock_ticker": "",
+    "icp_number": ""
+  },
+  "emails": {
+    "business": "michelleh@amigoglobal.com",
+    "investor": "fusheng@amigoglobal.com"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "business": "业务",
+    "news": "新闻",
+    "contact": "联系我们"
+  },
+  "footer": {
+    "brand_primary": "Amigo",
+    "brand_secondary": "Global",
+    "tagline": "让全球贸易像本地一样简单。",
+    "subtagline": "2024年，成立于美国加利福尼亚",
+    "col_business_title": "主营B2B，B2C",
+    "col_business_links": [
+      "尾货清仓",
+      "卖家友好",
+      "直播带货",
+      "App下载"
+    ],
+    "col_company_title": "公司",
+    "col_company_links": [
+      "关于AmigoGlobal",
+      "我们的使命",
+      "加入我们",
+      "我们的优势"
+    ],
+    "col_support_title": "支持",
+    "col_support_links": [
+      "联系我们",
+      "商务合作",
+      "平台隐私",
+      "服务条款"
+    ],
+    "copyright": "© 2026 AmigoGlobal.Inc"
+  }
+}

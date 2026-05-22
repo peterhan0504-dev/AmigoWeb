@@ -1,0 +1,51 @@
+{
+  "company": {
+    "name_short": "Amigo Global",
+    "name_full": "Amigo Global Inc.",
+    "founded_year": "2024",
+    "headquarters_city": "Los Angeles",
+    "is_listed": false,
+    "stock_exchange": "",
+    "stock_ticker": "",
+    "icp_number": ""
+  },
+  "emails": {
+    "business": "michelleh@amigoglobal.com",
+    "investor": "fusheng@amigoglobal.com"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "business": "Business",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "footer": {
+    "brand_primary": "Amigo",
+    "brand_secondary": "Global",
+    "tagline": "Making cross-border trade feel local.",
+    "subtagline": "Founded in California in 2024.",
+    "col_business_title": "B2B & B2C",
+    "col_business_links": [
+      "Clearance inventory",
+      "Seller-friendly marketplace",
+      "Live commerce",
+      "App download"
+    ],
+    "col_company_title": "Company",
+    "col_company_links": [
+      "About Amigo Global",
+      "Our mission",
+      "Careers",
+      "Why Amigo"
+    ],
+    "col_support_title": "Support",
+    "col_support_links": [
+      "Contact",
+      "Partnerships",
+      "Privacy",
+      "Terms"
+    ],
+    "copyright": "© 2026 Amigo Global Inc."
+  }
+}

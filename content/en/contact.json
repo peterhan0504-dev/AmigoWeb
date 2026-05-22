@@ -1,0 +1,60 @@
+{
+  "page_title": "Contact — Amigo Global",
+  "page_hero": {
+    "breadcrumb_root": "Home",
+    "breadcrumb_current": "Contact",
+    "title": "Whether you want to **partner**,\n**interview**, or **join us**, tell us directly.",
+    "desc": "We route different requests to the right team. Choose the best channel so your message can be handled faster."
+  },
+  "channels": [
+    {
+      "icon": "B",
+      "title": "Business Partnerships",
+      "desc": "Seller onboarding, sourcing partnerships, logistics services, payment integrations, and commercial inquiries.",
+      "email_key": "business"
+    },
+    {
+      "icon": "I",
+      "title": "Investor Relations",
+      "desc": "Financial updates, institutional conversations, and shareholder inquiries.",
+      "email_key": "investor"
+    }
+  ],
+  "form": {
+    "label": "GENERAL INQUIRY",
+    "title": "Send a message",
+    "lead": "If you are not sure who to contact, send a message here and we will route it to the right person within 1-2 business days.",
+    "bullets": [
+      "$0 listing fee and a 5% platform commission",
+      "One listing can reach both B2B buyers and B2C consumers",
+      "Stripe global payment splitting with compliant payout support in 46 countries"
+    ],
+    "field_name": "Name",
+    "field_name_placeholder": "Your name",
+    "field_company": "Company",
+    "field_company_placeholder": "Company or organization",
+    "field_email": "Email",
+    "field_type": "Request type",
+    "field_type_options": [
+      "Seller onboarding",
+      "Business partnership / bulk purchasing",
+      "Media and interviews",
+      "Other inquiry"
+    ],
+    "field_message": "Message",
+    "field_message_placeholder": "Briefly describe your request or question...",
+    "submit": "Send Message"
+  },
+  "offices": {
+    "eyebrow": "GLOBAL OFFICES",
+    "title": "Where to find us",
+    "items": [
+      {
+        "city": "Los Angeles",
+        "country": "USA · WEST",
+        "addr": "801 E 7th St\nUnit 113, 114, 115\nLos Angeles, CA 90021",
+        "tel": "+1 626-689-0198"
+      }
+    ]
+  }
+}

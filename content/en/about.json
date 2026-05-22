@@ -1,0 +1,82 @@
+{
+  "page_title": "About — Amigo Global",
+  "page_hero": {
+    "breadcrumb_root": "Home",
+    "breadcrumb_current": "About",
+    "title": "We believe cross-border trade\nshould be **accessible to everyone**.",
+    "desc": "Founded in 2024 and headquartered in Los Angeles, California, Amigo Global is a B2B/B2C marketplace for cross-border goods. We use technology to lower the barrier to international sourcing, helping clearance inventory, wholesale supply, and brand merchandise reach global buyers efficiently."
+  },
+  "mission": {
+    "label": "OUR MISSION",
+    "title": "Make cross-border transactions simple.",
+    "paragraphs": [
+      "We package the hardest parts of cross-border sourcing into one app: discovery, payment, and settlement. Sellers list once and become visible globally; buyers order with fewer barriers; the platform helps handle payment splitting, currency conversion, and compliant settlement.",
+      "We believe global trade should not belong only to large enterprises. Clearance retailers, suppliers building brands, and small businesses looking for direct sourcing should all have access to the same tools, costs, and speed."
+    ]
+  },
+  "journey": {
+    "eyebrow": "OUR ROADMAP",
+    "title": "Our path",
+    "milestones": [
+      {
+        "year": "2024",
+        "title": "Company founded",
+        "desc": "Amigo Global Inc. was incorporated in Los Angeles, California with a clear focus on a B2B + B2C cross-border marketplace."
+      },
+      {
+        "year": "2025",
+        "title": "Technology foundation completed",
+        "desc": "The team completed the iOS app, Stripe Connect payment-splitting infrastructure, and compliant payout support across 46 countries."
+      },
+      {
+        "year": "2026",
+        "title": "Platform opening",
+        "desc": "The app is prepared for App Store launch, seller onboarding, first cross-border shipments, and multi-currency settlement."
+      },
+      {
+        "year": "Vision",
+        "title": "An open global marketplace",
+        "desc": "Any seller, any buyer, and any compliant product should be able to reach the world through Amigo Global."
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "LEADERSHIP",
+    "title": "Core leadership team",
+    "members": [
+      {
+        "avatar": "FS",
+        "name": "Fu Sheng",
+        "role": "Founder & CEO",
+        "bio": "A cross-border operator with deep experience in the US market, spanning clearance inventory, brand distribution, container-level wholesale, and practical marketplace execution."
+      },
+      {
+        "avatar": "Michelle",
+        "name": "Michelle Hongli",
+        "role": "Co-founder & CFO",
+        "bio": "An experienced operator in cross-border fulfillment and overseas warehouse operations. She leads the systems that turn seller visibility into measurable fulfillment speed."
+      }
+    ]
+  },
+  "values": {
+    "eyebrow": "OUR VALUES",
+    "title": "How we work matters as much as what we build.",
+    "items": [
+      {
+        "num": "01 / Sellers Win First",
+        "title_en": "Sellers Win First",
+        "desc": "The platform succeeds only when sellers earn. Lower commissions, faster settlement, and clearer rules make the business sustainable."
+      },
+      {
+        "num": "02 / Real Goods, Real Prices",
+        "title_en": "Real Goods, Real Prices",
+        "desc": "We do not support counterfeit goods or misleading listings. Merchant and product reviews protect the trust that makes the marketplace work."
+      },
+      {
+        "num": "03 / Borderless by Design",
+        "title_en": "Borderless by Design",
+        "desc": "Currency, customs, taxes, and shipping should feel simpler to the buyer and seller because the platform absorbs the complexity."
+      }
+    ]
+  }
+}
