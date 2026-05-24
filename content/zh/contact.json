@@ -43,7 +43,10 @@
     ],
     "field_message": "详细说明",
     "field_message_placeholder": "简要描述您的需求或问题...",
-    "submit": "发送留言"
+    "submit": "发送留言",
+    "status_sending": "提交中…",
+    "status_success": "已收到，我们会在 1-2 个工作日内联系您",
+    "status_error": "提交失败，请稍后重试或直接发邮件"
   },
   "offices": {
     "eyebrow": "GLOBAL OFFICES",

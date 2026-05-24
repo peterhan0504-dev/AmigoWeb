@@ -43,7 +43,10 @@
     ],
     "field_message": "Message",
     "field_message_placeholder": "Briefly describe your request or question...",
-    "submit": "Send Message"
+    "submit": "Send Message",
+    "status_sending": "Sending…",
+    "status_success": "Got it. We'll reach out within 1-2 business days.",
+    "status_error": "Submission failed. Please try again or email us directly."
   },
   "offices": {
     "eyebrow": "GLOBAL OFFICES",

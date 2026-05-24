@@ -166,37 +166,96 @@
 
   function postProcess() {
     document.querySelectorAll('.nav-links a').forEach(function (a) {
-      var href = (a.getAttribute('href') || '').split('#')[0];
-      if (href === page) a.classList.add('active');
+      var raw = a.getAttribute('href') || '';
+      if (raw.indexOf('#') !== -1) return;
+      if (raw === page) a.classList.add('active');
     });
     var swap = document.querySelector('[data-lang-switch]');
     if (swap) swap.setAttribute('href', '../' + otherLang + '/' + page);
+    bindMobileNav();
   }
 
-  function bindContactForm(settings) {
+  function bindMobileNav() {
+    var nav = document.querySelector('nav.top');
+    var toggle = nav && nav.querySelector('.nav-toggle');
+    var links = nav && nav.querySelector('.nav-links');
+    if (!nav || !toggle || !links) return;
+    function close() {
+      nav.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+    function open() {
+      nav.classList.add('nav-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (nav.classList.contains('nav-open')) close(); else open();
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') close();
+    });
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) close();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') close();
+    });
+  }
+
+  function bindContactForm(settings, content) {
     var form = document.querySelector('[data-contact-form]');
     if (!form) return;
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var defaultSubmitText = submitBtn ? submitBtn.textContent : '';
+    var status = document.createElement('div');
+    status.className = 'form-status';
+    if (submitBtn) submitBtn.insertAdjacentElement('afterend', status);
+
+    var texts = {
+      sending: getPath(content, 'form.status_sending') || 'Sending…',
+      success: getPath(content, 'form.status_success') || 'Thanks, we received your message.',
+      error: getPath(content, 'form.status_error') || 'Submission failed. Please try again.'
+    };
+
+    function setStatus(kind, msg) {
+      status.textContent = msg || '';
+      status.dataset.state = kind || '';
+    }
+
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       var fields = form.elements;
-      var name = fields[0] ? fields[0].value.trim() : '';
-      var company = fields[1] ? fields[1].value.trim() : '';
-      var email = fields[2] ? fields[2].value.trim() : '';
-      var type = fields[3] ? fields[3].value : '';
-      var message = fields[4] ? fields[4].value.trim() : '';
-      var recipient = getPath(settings, 'emails.business') || 'michelleh@amigoglobal.com';
-      var subject = '[Amigo Global] ' + (type || 'Website inquiry');
-      var body = [
-        'Name: ' + name,
-        'Company: ' + company,
-        'Email: ' + email,
-        'Request type: ' + type,
-        '',
-        message
-      ].join('\n');
-      location.href = 'mailto:' + encodeURIComponent(recipient) +
-        '?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent(body);
+      var payload = {
+        name: fields[0] ? fields[0].value.trim() : '',
+        company: fields[1] ? fields[1].value.trim() : '',
+        email: fields[2] ? fields[2].value.trim() : '',
+        type: fields[3] ? fields[3].value : '',
+        message: fields[4] ? fields[4].value.trim() : '',
+        lang: lang
+      };
+
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = texts.sending; }
+      setStatus('pending', '');
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(function (r) { return r.json().catch(function () { return { ok: false }; }).then(function (data) { return { ok: r.ok && data.ok, data: data }; }); })
+        .then(function (res) {
+          if (res.ok) {
+            setStatus('success', texts.success);
+            form.reset();
+          } else {
+            setStatus('error', texts.error);
+          }
+        })
+        .catch(function () { setStatus('error', texts.error); })
+        .then(function () {
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = defaultSubmitText; }
+        });
     });
   }
 
@@ -213,7 +272,7 @@
     var content = results[1];
     applyContent(document.body, content, settings);
     postProcess();
-    bindContactForm(settings);
+    bindContactForm(settings, content);
     document.body.classList.add('ready');
   }).catch(function (err) {
     console.error('content load failed:', err);
