@@ -17,12 +17,11 @@
       <h1 data-key="hero.title" data-html></h1>
       <p data-key="hero.desc"></p>
       <div class="btn-row">
-        <button class="btn btn-primary" data-key="hero.btn1"></button>
-        <button class="btn btn-ghost" data-key="hero.btn2"></button>
+        <a class="btn btn-primary" href="contact.html" data-key="hero.btn1"></a>
       </div>
     </div>
     <div class="hero-visual">
-      <img src="../assets/images/hero.jpg" alt="" onerror="this.style.display='none'" />
+      <img src="../assets/images/hero-commerce.jpg" alt="Amigo Global ecommerce platform" />
     </div>
   </section>
 
@@ -39,17 +38,45 @@
 
   <section class="section" id="business">
     <div class="section-eyebrow" data-key="business.eyebrow"></div>
-    <h2 data-key="business.title"></h2>
-    <p class="lead" data-key="business.lead"></p>
+    <h2 class="accent-underline" data-key="business.title"></h2>
     <div class="biz-grid" data-list="business.cards">
       <template>
         <div class="biz-card">
-          <div class="biz-icon" data-field="icon"></div>
           <h3 data-field="title"></h3>
           <p data-field="desc"></p>
           <div class="biz-link" data-field="link"></div>
         </div>
       </template>
+    </div>
+  </section>
+
+  <!-- Core technology -->
+  <section class="section technology">
+    <h2 class="accent-underline" data-key="technology.title"></h2>
+    <div class="tech-grid" data-list="technology.cards">
+      <template>
+        <div class="tech-card">
+          <div class="tech-icon" data-field="icon"></div>
+          <div>
+            <h3 data-field="title"></h3>
+            <p data-field="desc"></p>
+            <div class="tech-link" data-field="link"></div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <!-- Alliance -->
+  <section class="alliance">
+    <div class="alliance-inner">
+      <div class="alliance-orbit">
+        <div class="alliance-bubble alliance-risk" data-key="alliance.risk"></div>
+        <div class="alliance-bubble alliance-invest" data-key="alliance.invest"></div>
+        <div class="alliance-bubble alliance-burden" data-key="alliance.burden"></div>
+        <div class="alliance-core" data-key="alliance.title"></div>
+      </div>
+      <a class="alliance-link" href="contact.html" data-key="alliance.link"></a>
     </div>
   </section>
 

@@ -4,12 +4,11 @@
     "eyebrow": "BASED IN US, GLOBAL CONNECTIONS",
     "title": "Make cross-border\nwholesale\nas **simple** as\nlocal buying.",
     "desc": "Amigo Global is a B2B/B2C cross-border marketplace connecting the United States with global buyers and sellers. We focus on general merchandise, clearance inventory, and wholesale supply so one app can connect sellers with millions of buyers.",
-    "btn1": "Download App",
-    "btn2": "Become a Seller"
+    "btn1": "Download App"
   },
   "stats": [
     {
-      "num": "200+",
+      "num": "100+",
       "label": "Countries and regions served"
     },
     {
@@ -22,39 +21,70 @@
     },
     {
       "num": "$5.2B",
-      "label": "2024 GMV"
+      "label": "2025 GMV"
     }
   ],
   "business": {
     "eyebrow": "OUR BUSINESS",
-    "title": "Four business pillars covering the cross-border trade journey",
-    "lead": "From sourcing to fulfillment, and from payment settlement to compliance, Amigo Global gives sellers and buyers modular services that make international commerce easier to run.",
+    "title": "Core Business",
     "cards": [
       {
-        "icon": "$0",
-        "title": "Listing Fees",
-        "desc": "Sellers can join and list products for free. Amigo Global only earns when sellers make a successful transaction.",
-        "link": "Free onboarding and free listings."
+        "title": "B2B Global Inventory Wholesale",
+        "desc": "Serving independent retailers and discount chains with container, pallet, and bulk purchasing options.",
+        "link": ""
       },
       {
-        "icon": "5%",
-        "title": "Platform Commission",
-        "desc": "Each completed transaction carries only a 5% service fee, significantly below many mainstream marketplaces.",
-        "link": "Learn about commission"
+        "title": "B2C Discount Marketplace",
+        "desc": "More than one million discounted products connecting inventory with global retail demand.",
+        "link": "Learn more"
       },
       {
-        "icon": "B2B + B2C",
-        "title": "Dual-Market Coverage",
-        "desc": "One product can serve wholesale buyers and retail consumers with unified fulfillment and settlement.",
-        "link": "Learn about the platform"
+        "title": "Live Clearance Channel",
+        "desc": "Real-time video commerce and professional hosts create urgency and accelerate inventory turnover.",
+        "link": ""
       },
       {
-        "icon": "46",
-        "title": "Supported Countries",
-        "desc": "With Stripe's global payment network, sellers can receive compliant payouts across 46 countries and regions.",
-        "link": "Learn about payments"
+        "title": "Global Visual Auction Center",
+        "desc": "Visual presentation and global bidding unlock stronger returns for high-value and non-standard inventory.",
+        "link": ""
       }
     ]
+  },
+  "technology": {
+    "title": "Core Technology",
+    "cards": [
+      {
+        "icon": "S",
+        "title": "Secure Payments",
+        "desc": "Safe, compliant, and transparent cross-border settlement designed to reduce payment risk.",
+        "link": "100% compliant"
+      },
+      {
+        "icon": "G",
+        "title": "Global Logistics",
+        "desc": "One-stop customs, overseas delivery, smart routing, and efficient last-mile fulfillment.",
+        "link": "Explore logistics"
+      },
+      {
+        "icon": "C",
+        "title": "Global Supply Chain",
+        "desc": "Connect overseas ecommerce inventory and factory supply with stable retail demand worldwide.",
+        "link": ""
+      },
+      {
+        "icon": "AI",
+        "title": "AI-Powered Operations",
+        "desc": "Demand matching, analytics, and real-time translation simplify the complete transaction journey.",
+        "link": ""
+      }
+    ]
+  },
+  "alliance": {
+    "risk": "Zero Risk",
+    "invest": "Zero Investment",
+    "burden": "Zero Burden",
+    "title": "Co-Creation Alliance",
+    "link": "Learn More"
   },
   "news": {
     "eyebrow": "NEWSROOM",
