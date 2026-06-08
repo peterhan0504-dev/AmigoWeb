@@ -401,6 +401,7 @@ section.section { padding-top: 72px; padding-bottom: 72px; }
   transform: translate(-75px, 20px);
   z-index: -1;
 }
+html[lang="en"] .alliance-core::before { display: none; }
 .alliance-bubble {
   position: absolute;
   width: 104px;
