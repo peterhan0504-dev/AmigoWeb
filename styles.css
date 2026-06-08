@@ -412,11 +412,22 @@ section.section { padding-top: 72px; padding-bottom: 72px; }
   background: var(--brand);
   font-family: var(--font-serif);
   font-size: 25px;
+  line-height: 1.15;
+  text-align: center;
   z-index: 2;
 }
 .alliance-risk { top: -52px; left: calc(50% - 52px); }
 .alliance-invest { left: -52px; top: calc(50% - 52px); }
 .alliance-burden { right: -52px; top: calc(50% - 52px); }
+html[lang="en"] .alliance-bubble {
+  width: 128px;
+  height: 128px;
+  padding: 8px;
+  font-size: 18px;
+}
+html[lang="en"] .alliance-risk { top: -64px; left: calc(50% - 64px); }
+html[lang="en"] .alliance-invest { left: -64px; top: calc(50% - 64px); }
+html[lang="en"] .alliance-burden { right: -64px; top: calc(50% - 64px); }
 .alliance-link {
   display: inline-block;
   margin-top: -24px;
@@ -490,6 +501,10 @@ footer { padding-top: 50px; }
   .alliance-risk { top: -38px; left: calc(50% - 38px); }
   .alliance-invest { left: -38px; top: calc(50% - 38px); }
   .alliance-burden { right: -38px; top: calc(50% - 38px); }
+  html[lang="en"] .alliance-bubble { width: 88px; height: 88px; padding: 5px; font-size: 12px; }
+  html[lang="en"] .alliance-risk { top: -44px; left: calc(50% - 44px); }
+  html[lang="en"] .alliance-invest { left: -44px; top: calc(50% - 44px); }
+  html[lang="en"] .alliance-burden { right: -44px; top: calc(50% - 44px); }
   .news-grid { grid-template-columns: 1fr; }
   .page-hero h1 { font-size: 42px; }
   .team-grid { grid-template-columns: 1fr; }
